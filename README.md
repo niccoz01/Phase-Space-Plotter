@@ -1,7 +1,7 @@
 # Phase-Space-Plotter
 A phase portrait is a geometric representation of the trajectories of a dynamical system in the phase space. Such system can be written using differential equations of the form:
 
-![equation](https://latex.codecogs.com/svg.image?%5Cfrac%7Bdx%7D%7Bdt%7D=%20f(x,y)%20%5C;%5C;%5C;%5C;and%5C;%5C;%5C;%5C;%5Cfrac%7Bdy%7D%7Bdt%7D=g(x,y))
+  ![equation](https://latex.codecogs.com/svg.image?%5Cfrac%7Bdx%7D%7Bdt%7D=%20f(x,y)%20%5C;%5C;%5C;%5C;and%5C;%5C;%5C;%5C;%5Cfrac%7Bdy%7D%7Bdt%7D=g(x,y))
 
 Phase portraits are a key tool in the study of dynamical systems. A phase portrait of a dynamical system illustrates the system's trajectories, stability states and instability states in the state space. The axes are the state variables.
 This repository provides a simple phase space plotter using Python only.
@@ -42,6 +42,8 @@ Please note that only --d is required and the other arguments are optional (defa
 python run.py --d 'y' '(-0.5*sin(x))' --xmin -10 --xmax 10 --ymin -4 --ymax 4
 ```
 
+![Simple Pendulum](/Images/SimplePendulum.png)
+
 * Van der Poll oscillator (μ=3):
 
 
@@ -53,3 +55,5 @@ python run.py --d 'y' '(-0.5*sin(x))' --xmin -10 --xmax 10 --ymin -4 --ymax 4
 ```cmd
 python run.py --d 'y' '3*(1-x**2)*y-x' --xmin -10 --xmax 10 --ymin -4 --ymax 4
 ```
+
+![Van der Poll](/Images/VanderPoll.png)
